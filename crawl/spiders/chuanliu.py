@@ -75,7 +75,6 @@ def get_channels_chuanliu():
         '1014':'试播频道',
         '1012':'休闲生活',
         '1013':'8K超高清',
-        '3942':'重温经典',
     }
     url = 'http://epg.iqy.sc96655.com/v1/getChannels?partner=2&terminal=&definition=&citycode=&adcode=&charge_type=&channel_type='
     res = requests.get(url, headers=headers)
