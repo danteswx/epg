@@ -8,9 +8,9 @@ from utils.general import chuanliu_Authorization
 
 headers = {
     # 'Cookie': '',
-    'Authorization': chuanliu_Authorization,
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI5ODQwODlhNjc1OGU0ZjJlOTViMjk4NWM4YjA1MDNmYiIsImNvbXBhbnkiOiJxaXlpIiwibmFtZSI6InRlcm1pbmFsIn0.1gDPpBcHJIE8dLiq7UekUlPWMtJOYymI8zoIYlsVgc4',
     # 'X-Device-Id': '',
-    # 'User-Agent': '',
+    'User-Agent': 'okhttp/3.10.0.7',
 }
 
 def get_epgs_chuanliu(channel, channel_id, dt, func_arg):
@@ -75,6 +75,7 @@ def get_channels_chuanliu():
         '1014':'试播频道',
         '1012':'休闲生活',
         '1013':'8K超高清',
+        '3942':'重温经典',
     }
     url = 'http://epg.iqy.sc96655.com/v1/getChannels?partner=2&terminal=&definition=&citycode=&adcode=&charge_type=&channel_type='
     res = requests.get(url, headers=headers)
