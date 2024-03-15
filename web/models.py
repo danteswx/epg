@@ -220,7 +220,7 @@ class Epg(models.Model):
             ret = self.objects.filter(channel_id=channel_id, program_date=program_date).delete()
         else:
             ret = self.objects.filter(channel_id=channel_id, program_date__gte=program_date,
-                                      program_date_lte=last_program_date).delete()
+                                      program_date__lte=last_program_date).delete()
         return ret
 
 
