@@ -8,9 +8,9 @@ from utils.general import chuanliu_Authorization
 
 headers = {
     # 'Cookie': '',
-    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI5ODQwODlhNjc1OGU0ZjJlOTViMjk4NWM4YjA1MDNmYiIsImNvbXBhbnkiOiJxaXlpIiwibmFtZSI6InRlcm1pbmFsIn0.1gDPpBcHJIE8dLiq7UekUlPWMtJOYymI8zoIYlsVgc4',
+    'Authorization': chuanliu_Authorization,
     # 'X-Device-Id': '',
-    'User-Agent': 'okhttp/3.10.0.7',
+    # 'User-Agent': '',
 }
 
 def get_epgs_chuanliu(channel, channel_id, dt, func_arg):
